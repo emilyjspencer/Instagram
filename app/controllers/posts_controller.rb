@@ -17,10 +17,28 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def edit # action
+    @post = Post.find(params[:id])
+  end
+
+  def update  # crud method
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+     flash[:notice] = "Post was updated"
+     redirect_to post_path(@post)
+    else
+     flash[:notice] = "Post was not updated"
+     render 'edit'
+    end
+  end
+
+  def index # action
+    @posts = Post.all
+  end 
 
   private
     
-  def post_params
+  def post_params # posts must have caption and comments field
     params.require(:post).permit(:caption, :comments)
   end
 
