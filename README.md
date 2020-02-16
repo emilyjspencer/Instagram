@@ -85,3 +85,14 @@ As a registered user,
 So I can make my pictures look better,
 I'd like to be able to add filters to my posts
 ```
+
+
+Status update
+
+I need to do the following:
+
+Add signup and login links to the homepage
+Implement picture upload functionality
+Fix the issues with sign up: user currently not being taken to different page and sign up link takes users
+to the users page
+Implement hashtags and filters functionality
