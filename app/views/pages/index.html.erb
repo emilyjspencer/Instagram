@@ -2,3 +2,13 @@
 
 <h2>Sign up for an account</h2>
 
+<h3>Fill out the below to Sign Up</h3>
+    
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"><br>
+      <input type="text" name="first_name" placeholder="First name"><br>
+      <input type="text" name="last_name", placeholder="Last name"><br>
+      <input type="text" name="username" placeholder="Username"><br>
+      <input type="email" name="login[email]", placeholder="Email"><br>
+      <input type="password" name="login[password]" placeholder="Password"><br>
+      <input type="submit" name="Sign Up" class="submit">
+    </form>
