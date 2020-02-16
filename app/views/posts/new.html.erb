@@ -1,5 +1,7 @@
-<h1>Make a post</h1>
-
+<h1 align="center">Make a post</h1>
+<br>
+<br>
+<div align="center">
 <%= form_for @post do |f| %>
  <p>
   <%= f.text_field :caption %>
@@ -12,4 +14,5 @@
   <%= f.submit %>
  </p>
 <% end %>
+</div>
 
