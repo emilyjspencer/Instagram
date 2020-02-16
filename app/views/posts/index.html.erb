@@ -10,6 +10,9 @@
    <td><%= link_to 'Edit', edit_post_path(post) %></td>
    <td><%= link_to 'Delete', post_path(post), method: :delete, data: {confirm: "Are you sure?"} %></td>
    <td><%= link_to 'Show', post_path(post) %></td>
+   <td><small>Created by: <%= post.user.username if post.user %>,
+   <%= time_ago_in_words(post.created_at) %> ago, 
+   last updated: <%= time_ago_in_words(post.updated_at) %> ago</small></td>
  </tr>
  <% end %>
 </table>
