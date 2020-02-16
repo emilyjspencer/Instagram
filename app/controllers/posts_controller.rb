@@ -5,8 +5,18 @@ class PostsController < ApplicationController
 
   def create # crud method - create a new post
     @post = Post.new(post_params)
-    @post.save # save to db
+    if @post.save
+      flash[:notice] = "Post was successfully made"
+      redirect_to post_path(@post)
+    else
+      render 'new'
+    end
   end
+
+  def show
+    @post = Post.find(params[:id])
+  end
+
 
   private
     
