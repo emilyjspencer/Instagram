@@ -13,7 +13,7 @@ Sign-up
 
 As a non-registered user,
 So I can start to make posts,
-I'd like to see a sign-up form on the homepage
+I'd like to see a link to sign up on the homepage
 
 As a non-registered user,
 So I can make a post,
