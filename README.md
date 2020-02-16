@@ -1,7 +1,7 @@
 This is my attempt to build a clone of Instagram - based on the 
 Maker's Academy Instagram challenge.
 
-This version will first be spiked.
+This version will first be written without tests.
 
 User Stories
 
