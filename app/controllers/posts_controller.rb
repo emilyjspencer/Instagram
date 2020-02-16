@@ -34,6 +34,7 @@ class PostsController < ApplicationController
   end
 
   def index # action
+    @posts = Post.paginate(page: params[:page], per_page: 10)
     @posts = Post.all
   end 
 
