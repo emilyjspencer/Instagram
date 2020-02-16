@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 
   def create # crud method - create a new post
     @post = Post.new(post_params)
+    @post.user = User.first
     if @post.save
       flash[:notice] = "Post was successfully made"
       redirect_to post_path(@post)
