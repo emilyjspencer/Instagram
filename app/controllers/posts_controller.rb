@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+
+  before_action :post_helper, only: [:edit, :update, :show, :destroy]
+
   def new # action 
     @post = Post.new
   end
@@ -14,15 +17,12 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
   end
 
   def edit # action
-    @post = Post.find(params[:id])
   end
 
   def update  # crud method
-    @post = Post.find(params[:id])
     if @post.update(post_params)
      flash[:notice] = "Post was updated"
      redirect_to post_path(@post)
@@ -37,7 +37,6 @@ class PostsController < ApplicationController
   end 
 
   def destroy
-    @post = Post.find(params[:id])
     @post.destroy
     flash[:notice] = "Post was deleted"
     redirect_to posts_path
@@ -48,5 +47,9 @@ class PostsController < ApplicationController
   def post_params # posts must have caption and comments field
     params.require(:post).permit(:caption, :comments)
   end
+
+  def post_helper
+    @post = Post.find(params[:id])
+ end
 
 end 
