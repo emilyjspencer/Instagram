@@ -91,7 +91,7 @@ Status update
 
 I need to do the following:
 
-Add login link to the homepage
+Add log out functionality 
 Implement picture upload functionality
 Fix the issues with sign up: user currently not being taken to different page and sign up link takes users
 to the users page
