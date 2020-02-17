@@ -29,7 +29,7 @@ The email addresses used to sign up must be valid
 
 As a newly registered user,
 So I know I have successfully signed up,
-I'd like to see a "Sign up has been successful" message on the homepage 
+I'd like to see the following message-  "Welcome to Agilegram (User's name)" on the homepage 
 
 As a product owner
 So as to protect the website's content
@@ -59,7 +59,7 @@ I'd like to see an option to make a post
 
 As a registered user,
 So I can start to make posts,
-I'd like to be directed to my feed once I've signed in
+I'd like to be directed to the posts page once I've signed in
 
 As a registered user,
 So others can find my pictures,
@@ -91,8 +91,11 @@ Status update
 
 I need to do the following:
 
-Add signup and login links to the homepage
+Add login link to the homepage
 Implement picture upload functionality
 Fix the issues with sign up: user currently not being taken to different page and sign up link takes users
 to the users page
 Implement hashtags and filters functionality
+
+
+
