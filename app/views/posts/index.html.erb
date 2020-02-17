@@ -1,4 +1,12 @@
 <h1 align="center">All posts</h1>
+<br>
+<br>
+<div id="createpost" align="center">
+<li><%= link_to "Create Post", new_post_path %></li>
+</div>
+<br>
+<br>
+<br>
 
 <%= render 'shared/post', obj: @posts %>
 <br>
