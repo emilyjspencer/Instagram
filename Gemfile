@@ -27,7 +27,7 @@ gem 'bcrypt', '~> 3.1.7'
 #gem 'bootstrap-will_paginate', '1.0.0'
 gem 'simplecov', require: false, group: :test
 # Use Active Storage variant
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem 'aws-sdk', '~> 3'
 
 
